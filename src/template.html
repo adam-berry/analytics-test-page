@@ -15,7 +15,15 @@
 	     for the current page. CSS for the rest of the app is
 	     lazily loaded when it precaches secondary pages -->
 	%sapper.styles%
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-T5JLQJ81VH"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
 
+		gtag('config', 'G-T5JLQJ81VH');
+	</script>
 	<!-- This contains the contents of the <svelte:head> component, if
 	     the current page has one -->
 	%sapper.head%
