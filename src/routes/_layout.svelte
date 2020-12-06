@@ -1,6 +1,6 @@
 <script>
 	import Nav from '../components/Nav.svelte';
-
+	import GoogleAnalytics from '../components/GoogleAnalytics.svelte';
 	export let segment;
 </script>
 
@@ -15,6 +15,7 @@
 	}
 </style>
 
+<GoogleAnalytics />
 <Nav {segment}/>
 
 <main>
