@@ -5,19 +5,21 @@
 </script>
 
 <style>
-	main {
-		position: relative;
-		max-width: 56em;
-		background-color: white;
-		padding: 2em;
-		margin: 0 auto;
-		box-sizing: border-box;
+	.container {
+		position: absolute;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 88%;
+		top: 9%;
+		left: 0;
 	}
 </style>
 
 <GoogleAnalytics />
 <Nav {segment}/>
 
-<main>
+<main class='container'>
 	<slot></slot>
 </main>

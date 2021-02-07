@@ -1,6 +1,6 @@
 {
-  "name": "TODO",
-  "description": "TODO",
+  "name": "support-eng-case-study",
+  "description": "A demo store to break and fix things",
   "version": "0.0.1",
   "scripts": {
     "start": "sapper dev",

@@ -1,4 +1,5 @@
 	<script>
+        // https://tute.io/google-analytics-svelte-sapper
         import { stores } from '@sapper/app';
         const { page } = stores();
         $: {

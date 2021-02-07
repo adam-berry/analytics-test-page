@@ -2,6 +2,13 @@
 	<title>About</title>
 </svelte:head>
 
-<h1>About this site</h1>
+<div>
+	<h1>About this site</h1>
+	<p>This is a fake store that sells pictures of real cats</p>
+</div>
 
-<p>This is the 'about' page. There's not much here.</p>
+<style>
+	h1 {
+		text-align: center;
+	}
+</style>
