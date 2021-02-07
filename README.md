@@ -1,21 +1,17 @@
-# Sapper Example
+# Bolt Support Engineer - Case Study - WIP
 
-This directory is a brief example of a [Sapper](https://sapper.svelte.dev/) app that can be deployed with Vercel and zero configuration.
+## Getting Started
 
-## Deploy Your Own
+- Clone this repository
+- Install npm
+- Run npm Build && npm start 
+- The application will be running at http://localhost:3000
 
-Deploy your own Sapper project with Vercel.
+## How it works
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/vercel/vercel/tree/master/examples/sapper)
+- The Bolt scripts along with Google Analytics is loaded in the <head> tag in template.html
+- The bulk of the project exists in src > routes > index
+- When a user clicks on a name card in the gallery view, an onclick event handler calls updateCart() the item data and 'push' parameter. This creats a new object, adds this the the items array in the cart object and calls the BoltCheckout.configure() method.
+- When the user clicks on the photo and closes the image, updateCart() is called with a 'pop' parameter which removes the item from items array in the cart and calls BoltCheckout.configure()
 
-_Live Example: https://sapper.now-examples.now.sh_
 
-### How We Created This Example
-
-To get started with Sapper deployed with Vercel, you can use [degit](https://github.com/Rich-Harris/degit) to initialize the project:
-
-```shell
-$ npx degit "sveltejs/sapper-template#webpack" my-sapper-app
-```
-
-> The only change made is to change the build script in `package.json` to be `"sapper export"`.
